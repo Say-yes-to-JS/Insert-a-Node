@@ -63,8 +63,10 @@ function printSinglyLinkedList(node, sep, ws) {
  *
  */
 function insertNodeAtHead(head, data) {
-
-
+    let n = new SinglyLinkedList();
+    n.data = data; n.next = head;
+    head = n;
+    return head;
 }
 
 function main() {
